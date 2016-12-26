@@ -30,8 +30,8 @@ app.get('/', function (req, res) {
 app.post('/', function (req, res) {
 
 	var response={
-		"speech":"",
-		"displayText":"john has scored 150 marks.",
+		"speech":"john has scored 150 marks.",
+		"displayText":"john has scored 1000 marks.",
 		"data":{},
 		"contextOut":[],
 		"source":"some source"
