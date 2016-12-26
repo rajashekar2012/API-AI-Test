@@ -1,0 +1,24 @@
+{
+  "name": "apiai-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "apiai": "^3.0.3",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajashekar2012/API-AI-Test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajashekar2012/API-AI-Test/issues"
+  },
+  "homepage": "https://github.com/rajashekar2012/API-AI-Test#readme"
+}
