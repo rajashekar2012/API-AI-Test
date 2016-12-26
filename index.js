@@ -28,8 +28,19 @@ app.get('/', function (req, res) {
 
 // This responds a POST request for the homepage
 app.post('/', function (req, res) {
+
+	var response={
+		"speech":"",
+		"displayText":"john has scored 150 marks.",
+		"data":{},
+		"contextOut":[],
+		"source":"some source"
+
+	};
+
+
    console.log("Got a POST request for the homepage");
-   res.send('Hello POST');
+   res.send(response);
 });
 
 var server = app.listen(app.get('port'), function () {
