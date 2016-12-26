@@ -7,7 +7,9 @@
     "apiai": "^3.0.3",
     "express": "^4.14.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+      "start": "node index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
