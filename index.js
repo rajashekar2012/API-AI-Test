@@ -89,7 +89,7 @@ app.post('/', function (req, res) {
       var year1=arr[0].substr(0,4);
       var year2=arr[1].substr(0,4);
 
-        for (var i =year1; i <= year2; i++) {
+        for (var i =year1; i < year2; i++) {
 
           //var year=arr[i].substr(0,4);
 
