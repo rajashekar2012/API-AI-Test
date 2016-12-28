@@ -110,10 +110,7 @@ app.post('/', function (req, res) {
         "data":{},
         "contextOut":[],
         "source":"some source"
-
       };
-
-  console.log(response);
 
   });
 
@@ -128,6 +125,8 @@ console.log(_data);*/
 
 
    console.log("Got a POST request for the homepage");
+
+   console.log(response);
    res.send(response);
 });
 
