@@ -61,6 +61,8 @@ app.post('/', function (req, res) {
  req.on('data', function (chunk) {
     //_data += chunk;
 
+     console.log("indide req.on");
+
     _data= chunk.toString('utf8');
     _data=JSON.parse(_data);   
 
@@ -112,6 +114,8 @@ app.post('/', function (req, res) {
         "source":"some source"
       };
 
+ console.log(response);
+ 
   });
 
 /*req.on('end', function () {
@@ -126,7 +130,7 @@ console.log(_data);*/
 
    console.log("Got a POST request for the homepage");
 
-   console.log(response);
+   //console.log(response);
    res.send(response);
 });
 
