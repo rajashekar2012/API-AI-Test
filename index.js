@@ -57,8 +57,9 @@ app.post('/', function (req, res) {
  var _data;
  var response={};
  var speechText="";
-
- req.on('data', function (chunk) {
+ req.setEncoding('utf8');
+ req.on('data', function (chunk) 
+ {
     //_data += chunk;
 
      console.log("indide req.on");
@@ -114,14 +115,17 @@ app.post('/', function (req, res) {
         "source":"some source"
       };
 
+
  console.log(response);
- 
+
   });
 
-/*req.on('end', function () {
-    console.log('_data: ' + _data);
-    var jsonObj = JSON.parse(_data);
-  })*/
+req.on('end', function () {
+    //console.log(':in onEnd:: _data: ' + _data);
+    //var jsonObj = JSON.parse(_data);
+    console.log("on response end");
+    res.send(response);
+  })
 
 /*console.log("data:");
 console.log(_data);*/
@@ -131,7 +135,7 @@ console.log(_data);*/
    console.log("Got a POST request for the homepage");
 
    //console.log(response);
-   res.send(response);
+   //res.send(response);
 });
 
 var server = app.listen(app.get('port'), function () {
